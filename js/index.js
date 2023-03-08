@@ -1,17 +1,20 @@
-// DETECT MOBILE VIEW SCREEN SIZE
-// Execute the function when the window is resized
-window.addEventListener('resize', detectMobileView);
-// Execute the function when the page loads
-detectMobileView();
+import { getMenuLinks } from './navigation/_functionNavigation';
+import MenuBuilder from './navigation/MenuBuilder';
+import HeaderBuilder from './header/HeaderBuilder';
+import FooterBuilder from './footer/FooterBuilder';
+import { changeIndexHighlight } from './header/_functionsHeader';
 
-// Call the init function when the HTML DOM is ready
-window.onload = operateNavbar;
+// Create Menu bar for the main page (index.html)
+const menu = new MenuBuilder(getMenuLinks(), getMenuLinks().length);
+document.querySelector('body').insertBefore(menu._buildMenu(), document.querySelector('body').firstChild);
 
-// Change automatically the fill color of the footer
-changeFooterFillColor(getLastSectionBgColor());
+// Create a header for the main page (index.html) and insert it on the top
+const header = new HeaderBuilder(
+  'Bienvenidos a ',
+  `Lorem ipsum dolor sit amet consectetur, adipisicing elit.`
+);
+document.querySelector('.home').insertBefore(header._buildHeader(), document.querySelector('main'));
+changeIndexHighlight(); // Adds a highlight
 
-// Highlight nav links based on users viewpoint
-highlightNavLinks();
-
-// Call clicker event listner for the newsletter button
-buttonFliesAway();
+const footer = new FooterBuilder();
+document.querySelector('body').appendChild(footer._buildFooter());

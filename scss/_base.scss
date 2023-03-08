@@ -1,6 +1,6 @@
 /**** IMPORTS ****/
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap");
-
+@import './variables';
 
 /**** MAIN BODY ****/
 * {
@@ -99,7 +99,7 @@ li {
     }
 }
 .section-four {
-    background-color: rgb(213, 157, 250);
+    background-color: $last-section-color;
     .highlight {
         color: rgb(0, 140, 255);
     }
@@ -112,7 +112,9 @@ li {
     display: none;
 }
 .no-scroll {
-    overflow: hidden;
+    position: relative;
+    overflow: hidden;    
+    z-index: 0;
 }
 /**** DESKTOP VIEW ****/
 @media screen and (min-width: 861px) {

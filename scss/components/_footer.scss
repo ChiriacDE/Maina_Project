@@ -3,7 +3,6 @@
 
 
 /**** FOOTER ****/
-/********* MOBILE VIEW ********/
 pg-footer {
 	font-family: 'Roboto', sans-serif;
 }
@@ -20,6 +19,7 @@ footer {
 	}
 }
 .footer-wave-svg {
+	fill: $last-section-color;
 	background-color: transparent;
 	display: block;
 	height: 30px;
@@ -237,10 +237,4 @@ footer {
 	text-decoration: none;
 }
 @media screen and (max-width: 860px) {
-	.footer-content {
-		flex-direction: column;
-	}
-	.footer-content-column {
-		padding-bottom: 15px;
-	}
 }

@@ -1,4 +1,4 @@
-class ErrorBox {
+export class ErrorBox {
     constructor(messageFront, messageBack) {
         // Main error container (contains also the background)
         this.errorBox = document.createElement('div');
