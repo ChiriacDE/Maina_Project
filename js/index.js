@@ -13,7 +13,7 @@ const header = new HeaderBuilder(
   'Bienvenidos a ',
   `Lorem ipsum dolor sit amet consectetur, adipisicing elit.`
 );
-document.querySelector('.home').insertBefore(header._buildHeader(), document.querySelector('main'));
+document.querySelector('body').insertBefore(header._buildHeader(), document.querySelector('main'));
 changeIndexHighlight(); // Adds a highlight
 
 const footer = new FooterBuilder();
