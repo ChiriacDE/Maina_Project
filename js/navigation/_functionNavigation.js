@@ -1,4 +1,4 @@
-import { isWindowBottom } from "../functions";
+import { isWindowBottom } from "../functions.js";
 
 // HIGHLIGHT NAVTAB BASED ON VIEWPOINTS SECTION
 export function highlightNavLinks() {

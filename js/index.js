@@ -1,8 +1,8 @@
-import { getMenuLinks } from './navigation/_functionNavigation';
-import MenuBuilder from './navigation/MenuBuilder';
-import HeaderBuilder from './header/HeaderBuilder';
-import FooterBuilder from './footer/FooterBuilder';
-import { changeIndexHighlight } from './header/_functionsHeader';
+import { getMenuLinks } from './navigation/_functionNavigation.js';
+import MenuBuilder from './navigation/MenuBuilder.js';
+import HeaderBuilder from './header/HeaderBuilder.js';
+import FooterBuilder from './footer/FooterBuilder.js';
+import { changeIndexHighlight } from './header/_functionsHeader.js';
 
 // Create Menu bar for the main page (index.html)
 const menu = new MenuBuilder(getMenuLinks(), getMenuLinks().length);

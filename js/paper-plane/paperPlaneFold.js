@@ -1,4 +1,4 @@
-import * as newsValid from '../newsletters/newslettersValidationSettings';
+import * as newsValid from '../newsletters/newslettersValidationSettings.js';
 
 export function foldPaperPlane() {
     document.querySelectorAll('.flying-button').forEach(button => {

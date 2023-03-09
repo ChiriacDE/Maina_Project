@@ -1,6 +1,6 @@
-import { ChangeNavIfWindowScroll } from "./ChangeNavIfWindowScroll";
-import { ScrollToAnchor } from "./ScrollToAnchor";
-import * as  navFunctions from './_functionNavigation';
+import { ChangeNavIfWindowScroll } from "./ChangeNavIfWindowScroll.js";
+import { ScrollToAnchor } from "./ScrollToAnchor.js";
+import * as  navFunctions from './_functionNavigation.js';
 
 export class ResponsiveNav {
     constructor(options) {

@@ -1,6 +1,6 @@
 import { _initializeResponsiveNav } from "./navigation/ResponsiveNav.js";
-import { foldPaperPlane } from "./paper-plane/paperPlaneFold";
-import * as customFunctions from './functions';
+import { foldPaperPlane } from "./paper-plane/paperPlaneFold.js";
+import * as customFunctions from './functions.js';
 
 // Execute the function when the window is resized
 window.addEventListener('resize', customFunctions.detectMobileView);
