@@ -1,3 +1,5 @@
+import { isWindowBottom } from "../functions";
+
 // HIGHLIGHT NAVTAB BASED ON VIEWPOINTS SECTION
 export function highlightNavLinks() {
     const navLinks = document.querySelectorAll('.nav-link');
